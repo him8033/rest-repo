@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quera Post</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <h1>Quera Posts</h1>
@@ -13,6 +13,7 @@
             <h2 class="user">@<%= post.username %></h2>
             <h3 class="content"><%= post.content %></h3>
             <a href="http://localhost:3000/posts/<%= post.id %>">Show in Details</a>
+            <a href="http://localhost:3000/posts/<%= post.id %>/edit">Edit Post</a>
         </div>
     <% } %>
     <a href="http://localhost:3000/posts/new">Add new post</a>
